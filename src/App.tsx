@@ -161,7 +161,7 @@ export default function App() {
             className="w-full h-full overflow-hidden"
           >
             <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200&h=1600" 
+              src="https://picsum.photos/seed/lily-fernandes/1200/1600" 
               alt="Lily Fernandes"
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
               referrerPolicy="no-referrer"
@@ -366,7 +366,7 @@ export default function App() {
             >
               <div className="aspect-[16/10] bg-neutral-100 rounded-[2.5rem] mb-10 overflow-hidden relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800&h=600" 
+                  src="https://picsum.photos/seed/fern-co/800/600" 
                   alt="Fern & Co." 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
                   referrerPolicy="no-referrer"
@@ -390,7 +390,7 @@ export default function App() {
             >
               <div className="aspect-[16/10] bg-neutral-100 rounded-[2.5rem] mb-10 overflow-hidden relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1540575861501-7c911727a263?auto=format&fit=crop&q=80&w=800&h=600" 
+                  src="https://picsum.photos/seed/university-outreach/800/600" 
                   alt="University Outreach" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
                   referrerPolicy="no-referrer"
@@ -441,10 +441,10 @@ export default function App() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600",
-              "https://images.unsplash.com/photo-1551818255-e6e10975bc17?auto=format&fit=crop&q=80&w=600",
-              "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600",
-              "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=600"
+              "https://picsum.photos/seed/work-action-1/600/800",
+              "https://picsum.photos/seed/work-action-2/600/800",
+              "https://picsum.photos/seed/work-action-3/600/800",
+              "https://picsum.photos/seed/work-action-4/600/800"
             ].map((src, i) => (
               <motion.div 
                 key={i}
