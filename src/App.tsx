@@ -28,6 +28,7 @@ import {
   Sparkles,
   Quote
 } from "lucide-react";
+import { IMG_HERO, IMG_FERN_CO, IMG_UNIVERSITY, IMG_GALLERY } from "./images";
 
 const Section = ({ children, className = "", id = "" }: { children: ReactNode, className?: string, id?: string }) => (
   <motion.section
@@ -161,10 +162,9 @@ export default function App() {
             className="w-full h-full overflow-hidden"
           >
             <img 
-              src="https://picsum.photos/seed/lily-fernandes/1200/1600" 
+              src={IMG_HERO}
               alt="Lily Fernandes"
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
-              referrerPolicy="no-referrer"
             />
           </motion.div>
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
@@ -366,10 +366,9 @@ export default function App() {
             >
               <div className="aspect-[16/10] bg-neutral-100 rounded-[2.5rem] mb-10 overflow-hidden relative">
                 <img 
-                  src="https://picsum.photos/seed/fern-co/800/600" 
+                  src={IMG_FERN_CO}
                   alt="Fern & Co." 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-8 right-8 glass px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">
                   Entrepreneurship
@@ -390,10 +389,9 @@ export default function App() {
             >
               <div className="aspect-[16/10] bg-neutral-100 rounded-[2.5rem] mb-10 overflow-hidden relative">
                 <img 
-                  src="https://picsum.photos/seed/university-outreach/800/600" 
+                  src={IMG_UNIVERSITY}
                   alt="University Outreach" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-8 right-8 glass px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest">
                   Event Strategy
@@ -440,18 +438,13 @@ export default function App() {
             <p className="text-neutral-500 max-w-xs mt-4 md:mt-0 font-light">Capturing the energy and precision of real-world execution.</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              "https://picsum.photos/seed/work-action-1/600/800",
-              "https://picsum.photos/seed/work-action-2/600/800",
-              "https://picsum.photos/seed/work-action-3/600/800",
-              "https://picsum.photos/seed/work-action-4/600/800"
-            ].map((src, i) => (
+            {IMG_GALLERY.map((src, i) => (
               <motion.div 
                 key={i}
                 whileHover={{ scale: 1.05, rotate: i % 2 === 0 ? 1 : -1 }} 
                 className={`aspect-[3/4] rounded-[2rem] overflow-hidden shadow-2xl shadow-neutral-200/50 ${i % 2 !== 0 ? 'mt-12' : ''}`}
               >
-                <img src={src} alt="Gallery" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" referrerPolicy="no-referrer" />
+                <img src={src} alt="Gallery" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
               </motion.div>
             ))}
           </div>
