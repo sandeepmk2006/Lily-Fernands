@@ -29,6 +29,8 @@ import {
   Quote
 } from "lucide-react";
 import { IMG_HERO, IMG_FERN_CO, IMG_UNIVERSITY, IMG_GALLERY } from "./images";
+import ChatBot from "./ChatBot";
+import OnlineCourses from "./OnlineCourses";
 
 const Section = ({ children, className = "", id = "" }: { children: ReactNode, className?: string, id?: string }) => (
   <motion.section
@@ -103,6 +105,7 @@ export default function App() {
             <a href="#about" className="hover:text-neutral-900 transition-colors">About</a>
             <a href="#services" className="hover:text-neutral-900 transition-colors">Services</a>
             <a href="#skills" className="hover:text-neutral-900 transition-colors">Skills</a>
+            <a href="#courses" className="hover:text-neutral-900 transition-colors">Courses</a>
             <a href="#experience" className="hover:text-neutral-900 transition-colors">Experience</a>
             <a href="#projects" className="hover:text-neutral-900 transition-colors">Projects</a>
             <a href="#contact" className="hover:text-neutral-900 transition-colors">Contact</a>
@@ -287,6 +290,11 @@ export default function App() {
             </div>
           </div>
         </div>
+      </Section>
+
+      {/* Online Courses Section */}
+      <Section id="courses" className="bg-neutral-50">
+        <OnlineCourses />
       </Section>
 
       {/* Experience Section */}
@@ -493,6 +501,8 @@ export default function App() {
           </div>
         </div>
       </Section>
+      {/* AI Chat Assistant */}
+      <ChatBot />
     </div>
   );
 }
